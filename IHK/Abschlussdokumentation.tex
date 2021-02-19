@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% German specific stuff
+\usepackage[ngerman]{babel}
+% Hypenation for german
+\usepackage{hyphenat}
+\hyphenation{Mathe-matik wieder-gewinnen}
+
+% To create dummy text
+\usepackage{lipsum}
+
+\hypersetup{
+    colorlinks=true,
+}
+
+% Fancyhdr
+\pagestyle{fancy}
+\fancyhead[L]{Abschlussdokumentation IHK}
+\fancyfoot[L]{J. Reinert}
+\fancyfoot[R]{\today}
+
+% Article stuff
+\title{Abschlussdokumentation IHK}
+\author{Johannes Reinert}
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Einführung}
+\lipsum{1}
+\subsection{Punkt 1}
+\lipsum{4}
+
+\section{Mittelpunkt}
+\lipsum{2}
+
+\section{Schluss}
+\lipsum{3}
+
+\end{document}
