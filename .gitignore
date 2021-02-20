@@ -16,3 +16,7 @@ IHK/Abschlussdokumentation.out
 IHK/Abschlussdokumentation.synctex.gz
 
 IHK/Abschlussdokumentation.toc
+
+*.xml
+
+*.bcf
