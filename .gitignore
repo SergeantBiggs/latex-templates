@@ -20,3 +20,7 @@ IHK/Abschlussdokumentation.toc
 *.xml
 
 *.bcf
+
+*.bbl
+
+*.blg
