@@ -3,6 +3,9 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{csquotes}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
 % add bibliography to TOC
 \usepackage{tocbibind}
 
@@ -67,6 +70,20 @@ Testing the citation \cite{test} tool.
 \section{Anhang}
 
 \subsection{Glossar}
+    \begin{tabularx}{\textwidth}{
+            %|| >{\raggedright\arraybackslash}X 
+            %| >{\raggedright\arraybackslash} X || }
+            || X | X ||}
+        \hline
+
+        Begriff & Definition \\
+        \hline\hline
+
+        Zeroth law of thermodynamics & If two thermodynamic systems are each in thermal equilibrium with
+        a third one, then they are in thermal equilibrium with each other. \\
+        \hline
+
+    \end{tabularx}
 
 \subsection{Bibliographie}
 \printbibliography
