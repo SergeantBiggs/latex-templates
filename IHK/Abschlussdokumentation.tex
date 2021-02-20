@@ -2,15 +2,27 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{csquotes}
+% add bibliography to TOC
+\usepackage{tocbibind}
 
 % German specific stuff
 \usepackage[ngerman]{babel}
-% Hypenation for german
+% Hyphenation for german
 \usepackage{hyphenat}
 \hyphenation{Mathe-matik wieder-gewinnen}
 
 % To create dummy text
 \usepackage{lipsum}
+
+% Citation + Bibtex
+\usepackage[
+    backend=biber,
+    style=numeric,
+    citestyle=numeric,
+]{biblatex}
+
+\addbibresource{bibliography.bib}
 
 \hypersetup{
     colorlinks=true,
@@ -27,6 +39,7 @@
 \author{Johannes Reinert}
 \date{\today}
 
+
 \begin{document}
 \maketitle
 \newpage
@@ -38,12 +51,16 @@
 \section{Einführung}
 \lipsum{1}
 \subsection{Punkt 1}
-\lipsum{4}
+
+Testing the citation \cite{test} tool.
 
 \section{Mittelpunkt}
 \lipsum{2}
 
 \section{Schluss}
 \lipsum{3}
+
+
+\printbibliography
 
 \end{document}
