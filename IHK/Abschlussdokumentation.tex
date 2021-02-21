@@ -5,6 +5,7 @@
 \usepackage{csquotes}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{graphicx}
 
 % add bibliography to TOC
 \usepackage{tocbibind}
@@ -37,14 +38,10 @@
 \fancyfoot[L]{J. Reinert}
 \fancyfoot[R]{\today}
 
-% Article stuff
-\title{Abschlussdokumentation IHK}
-\author{Johannes Reinert}
-\date{\today}
-
-
 \begin{document}
-\maketitle
+
+\input{title_page}
+
 \newpage
 
 \tableofcontents
@@ -52,16 +49,16 @@
 \newpage
 
 \section{Einleitung}
-\lipsum{1}
+\lipsum{}
 \subsection{Punkt 1}
 
 Testing the citation \cite{test} tool.
 
 \section{Projektbeschreibung}
-\lipsum{2}
+\lipsum{}
 
 \section{Projektplanung}
-\lipsum{3}
+\lipsum{}
 
 \section{Projektdurchführung}
 
@@ -71,8 +68,6 @@ Testing the citation \cite{test} tool.
 
 \subsection{Glossar}
     \begin{tabularx}{\textwidth}{
-            %|| >{\raggedright\arraybackslash}X 
-            %| >{\raggedright\arraybackslash} X || }
             || X | X ||}
         \hline
 
@@ -85,7 +80,7 @@ Testing the citation \cite{test} tool.
 
     \end{tabularx}
 
-\subsection{Bibliographie}
-\printbibliography
+%\subsection{Bibliographie}
+\printbibliography[heading=bibintoc]
 
 \end{document}
