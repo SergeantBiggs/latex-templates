@@ -18,6 +18,9 @@ header-includes: |
     \fancyfoot[R]{\today}
 ---
 
+# TOC
+
+- [TOC](#toc)
 - [Section](#section)
 
 # Section
