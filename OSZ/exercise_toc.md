@@ -23,4 +23,6 @@ header-includes: |
 - [TOC](#toc)
 - [Section](#section)
 
+\newpage
+
 # Section
