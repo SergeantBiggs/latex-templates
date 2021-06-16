@@ -18,6 +18,8 @@ header-includes: |
     \fancyfoot[R]{\today}
 ---
 
+\newpage
+
 # TOC
 
 - [TOC](#toc)
