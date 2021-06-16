@@ -20,9 +20,9 @@ header-includes: |
 
 \newpage
 
-# TOC
+# Inhaltsverzeichnis
 
-- [TOC](#toc)
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
 - [Section](#section)
 
 \newpage
